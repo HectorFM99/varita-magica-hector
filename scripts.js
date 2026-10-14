@@ -10,7 +10,6 @@ document.addEventListener('click', (event) => {
 
     // 2.1 Imágenes: cambiamos la imagen por un gif aleatorio magic-*
     if (element.tagName === 'IMG') {
-        // Guardamos la imagen original por si luego pasa el cursor por encima
         if (!element.dataset.originalSrc) {
             element.dataset.originalSrc = element.getAttribute('src');
         }
